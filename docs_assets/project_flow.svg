@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+  <defs>
+    <style>
+      .bg{fill:#080808}.grid{stroke:#151515;stroke-width:1}.title{fill:#fff;font:800 44px 'Microsoft YaHei',Arial,sans-serif}.sub{fill:#8b8b8b;font:16px Consolas,'Microsoft YaHei',monospace;letter-spacing:2px}.box{fill:#111;stroke:#3b3b3b;stroke-width:2}.txt{fill:#fff;font:700 20px 'Microsoft YaHei',Arial,sans-serif}.desc{fill:#aaa;font:15px 'Microsoft YaHei',Arial,sans-serif}.small{fill:#777;font:13px Consolas,'Microsoft YaHei',monospace}.arrow{fill:none;stroke:#777;stroke-width:3;marker-end:url(#arrow)}.green{stroke:#6fe55f}.cyan{stroke:#35c9e6}.pink{stroke:#e63ba4}.yellow{stroke:#ffd900}.greenText{fill:#6fe55f}.cyanText{fill:#35c9e6}.pinkText{fill:#e63ba4}.yellowText{fill:#ffd900}
+    </style>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" class="grid" fill="none"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#777"/></marker>
+  </defs>
+  <rect class="bg" width="1600" height="1040"/><rect width="1600" height="1040" fill="url(#grid)"/>
+  <text x="90" y="76" class="title">ARC 推理游戏场 · 项目流程框架</text>
+  <text x="92" y="112" class="sub">STARTUP · LANDING · VERSION ROUTING · GAME LOOP · PROGRESS</text>
+  <rect x="90" y="148" width="1420" height="2" fill="#333"/><rect x="90" y="148" width="170" height="2" fill="#6fe55f"/>
+
+  <g transform="translate(620 180)"><rect class="box green" width="360" height="92"/><text x="180" y="38" text-anchor="middle" class="txt">运行 app.py</text><text x="180" y="67" text-anchor="middle" class="desc">自动调用项目 .venv 与 Streamlit</text></g>
+  <path d="M800 272V316" class="arrow green"/>
+  <g transform="translate(620 318)"><rect class="box yellow" width="360" height="92"/><text x="180" y="38" text-anchor="middle" class="txt">网站开始界面</text><text x="180" y="67" text-anchor="middle" class="desc">查看三版本简介 · 点击“开始挑战”</text></g>
+  <path d="M800 410V454" class="arrow yellow"/>
+  <g transform="translate(620 456)"><rect class="box" width="360" height="92"/><text x="180" y="38" text-anchor="middle" class="txt">选择 ARC-AGI 版本</text><text x="180" y="67" text-anchor="middle" class="desc">ARC-AGI-3 / ARC-AGI-2 / ARC-AGI-1</text></g>
+
+  <path d="M800 548V580H280V620" class="arrow green"/><path d="M800 548V620" class="arrow cyan"/><path d="M800 548V580H1320V620" class="arrow pink"/>
+
+  <g transform="translate(90 622)"><rect class="box green" width="380" height="106"/><text x="24" y="35" class="greenText txt">ARC-AGI-3</text><text x="24" y="65" class="desc">加载 25 个本地交互环境</text><text x="24" y="89" class="small">SELECT 规则 → START → 键盘 / 点击</text></g>
+  <g transform="translate(610 622)"><rect class="box cyan" width="380" height="106"/><text x="24" y="35" class="cyanText txt">ARC-AGI-2</text><text x="24" y="65" class="desc">读取公开训练集与评测集</text><text x="24" y="89" class="small">观察示例 → 编辑网格 → 提交答案</text></g>
+  <g transform="translate(1130 622)"><rect class="box pink" width="380" height="106"/><text x="24" y="35" class="pinkText txt">ARC-AGI-1</text><text x="24" y="65" class="desc">读取经典 ARC 网格任务</text><text x="24" y="89" class="small">观察示例 → 编辑网格 → 提交答案</text></g>
+
+  <path d="M280 728V770" class="arrow green"/><path d="M800 728V770" class="arrow cyan"/><path d="M1320 728V770" class="arrow pink"/>
+  <g transform="translate(90 772)"><rect class="box" width="380" height="106"/><text x="24" y="35" class="txt">交互反馈循环</text><text x="24" y="65" class="desc">画面变化 → 推断规则 → 继续操作</text><text x="24" y="89" class="small">RESET · UNDO · HELP · SELECT</text></g>
+  <g transform="translate(610 772)"><rect class="box" width="380" height="106"/><text x="24" y="35" class="txt">答案判定循环</text><text x="24" y="65" class="desc">尺寸与颜色完全匹配才算正确</text><text x="24" y="89" class="small">无限提交 · 上一题 · 下一题</text></g>
+  <g transform="translate(1130 772)"><rect class="box" width="380" height="106"/><text x="24" y="35" class="txt">答案判定循环</text><text x="24" y="65" class="desc">尺寸与颜色完全匹配才算正确</text><text x="24" y="89" class="small">无限提交 · 上一题 · 下一题</text></g>
+
+  <path d="M280 878V920H800" class="arrow"/><path d="M800 878V920" class="arrow"/><path d="M1320 878V920H800" class="arrow"/>
+  <g transform="translate(570 922)"><rect class="box yellow" width="460" height="82"/><text x="230" y="34" text-anchor="middle" class="txt">保存进度并继续挑战</text><text x="230" y="61" text-anchor="middle" class="desc">player_progress.db · 状态 · 尝试次数 · 操作历史</text></g>
+
+  <rect x="90" y="1017" width="1420" height="1" fill="#333"/>
+  <text x="90" y="1035" class="small">LOCAL DATA</text><text x="1460" y="1035" text-anchor="end" class="small">STREAMLIT + HTML/CSS/JS + ARC SDK</text>
+</svg>
